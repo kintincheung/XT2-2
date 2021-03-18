@@ -1,14 +1,17 @@
 function startTime() {
     var today = new Date();
     var h = today.getHours();
+    var hh = today.getHours();
+    var hhh = today.getHours();
+
     var m = today.getMinutes();
     var s = today.getSeconds();
     h = checkTime(h);
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('CET').innerHTML = h + ":" + m + ":" + s;
-    document.getElementById('MARS').innerHTML = (h+6) + ":" + m + ":" + s;
-    document.getElementById('JUPITER').innerHTML = (h+9) + ":" + m + ":" + s;
+    document.getElementById('MARS').innerHTML = hh + ":" + m + ":" + s;
+    document.getElementById('JUPITER').innerHTML = hhh + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
   }
   startTime();
