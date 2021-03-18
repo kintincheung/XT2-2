@@ -1,9 +1,8 @@
 function startTime() {
     var today = new Date();
     var h = today.getHours();
-    var hh = today.getHours();
-    var hhh = today.getHours();
-
+    var hh = (today.getHours()+7);
+    var hhh = (today.getHours()+4);
     var m = today.getMinutes();
     var s = today.getSeconds();
     h = checkTime(h);
