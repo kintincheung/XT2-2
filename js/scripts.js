@@ -6,6 +6,8 @@ function startTime() {
     var m = today.getMinutes();
     var s = today.getSeconds();
     h = checkTime(h);
+    hh = checkTime(hh);
+    hhh = checkTime(hhh);
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('CET').innerHTML = h + ":" + m + ":" + s;
