@@ -47,6 +47,7 @@ function startTime() {
   }
   else{
     document.getElementById("season").src = "img/winter.png";
+    var t = setTimeout(checkSeason, 1500);
 }
   }
   checkSeason();
@@ -110,6 +111,8 @@ function startTime() {
     document.getElementById("blok").style.border=' thick solid white ';
     document.getElementById("blok2").style.border=' thick solid white ';
     document.getElementById("blok3").style.border=' thick solid white ';
+    var t = setTimeout(checkDayNight, 1500);
+
   }
   }
   checkDayNight();
